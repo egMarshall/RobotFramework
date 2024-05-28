@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-05-21T11:15:07.560965" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="/Users/ericomarshall/Desktop/dev/Alura/FormacaoQA/RobotFramework">
+<suite id="s1-s1" name="Tests" source="/Users/ericomarshall/Desktop/dev/Alura/FormacaoQA/RobotFramework/tests">
+<suite id="s1-s1-s1" name="Primeiro Teste" source="/Users/ericomarshall/Desktop/dev/Alura/FormacaoQA/RobotFramework/tests/primeiro_teste.robot">
+<test id="s1-s1-s1-t1" name="Preencher os campos do formulário" line="9">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T11:15:07.692922" level="INFO">Typing text 'Érico' into text field 'id:form-nome'.</msg>
+<msg time="2024-05-21T11:15:07.693059" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-21T11:15:07.693146" level="FAIL">No browser is open.</msg>
+<arg>locator=id:form-nome</arg>
+<arg>text=Érico</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-21T11:15:07.692619" elapsed="0.001989">No browser is open.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>locator=id:form-cargo</arg>
+<arg>text=QA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-21T11:15:07.694898" elapsed="0.000203"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>locator=id:form-imagem</arg>
+<arg>text=https://github.com/egmarshall.png</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-21T11:15:07.695218" elapsed="0.000046"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>locator=class:lista-suspensa</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-21T11:15:07.695335" elapsed="0.000035"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//option[contains(.,'Programação)]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-21T11:15:07.695433" elapsed="0.000035"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>locator=id:form-botao</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-21T11:15:07.695523" elapsed="0.000031"/>
+</kw>
+<status status="FAIL" start="2024-05-21T11:15:07.691992" elapsed="0.003675">No browser is open.</status>
+</test>
+<status status="FAIL" start="2024-05-21T11:15:07.644726" elapsed="0.051688"/>
+</suite>
+<status status="FAIL" start="2024-05-21T11:15:07.643801" elapsed="0.053262"/>
+</suite>
+<status status="FAIL" start="2024-05-21T11:15:07.635422" elapsed="0.062159"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">RobotFramework.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Primeiro Teste">RobotFramework.Tests.Primeiro Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

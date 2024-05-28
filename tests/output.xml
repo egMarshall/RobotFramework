@@ -1,30 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-05-21T09:59:45.932351" rpa="false" schemaversion="5">
-<suite id="s1" name="Primeiro Teste" source="/Users/ericomarshall/Desktop/dev/Alura/Formação QA/RobotFramework/tests/primeiro_teste.robot">
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-05-21T12:47:12.530945" rpa="false" schemaversion="5">
+<suite id="s1" name="Primeiro Teste" source="/Users/ericomarshall/Desktop/dev/Alura/FormacaoQA/RobotFramework/tests/primeiro_teste.robot">
 <test id="s1-t1" name="Abrir navegador e acessar o site do Organo" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-21T09:59:46.008213" level="INFO">Opening browser 'chrome' to base url 'http://www.localhost:3000'.</msg>
+<msg time="2024-05-21T12:47:12.584938" level="INFO">Opening browser 'chrome' to base url 'http://www.localhost:3000'.</msg>
 <arg>url=http://www.localhost:3000</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-21T09:59:46.008099" elapsed="2.340010"/>
+<status status="PASS" start="2024-05-21T12:47:12.584824" elapsed="0.743289"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-21T09:59:48.348532" elapsed="0.660604"/>
+<status status="PASS" start="2024-05-21T12:47:13.328460" elapsed="0.382360"/>
 </kw>
-<status status="PASS" start="2024-05-21T09:59:46.007672" elapsed="3.001662"/>
+<status status="PASS" start="2024-05-21T12:47:12.584434" elapsed="1.126565"/>
 </test>
-<status status="PASS" start="2024-05-21T09:59:45.932860" elapsed="3.076759"/>
+<test id="s1-t2" name="Preencher os campos do formulário" line="9">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T12:47:13.711822" level="INFO">Typing text 'Érico' into text field 'id:form-nome'.</msg>
+<arg>locator=id:form-nome</arg>
+<arg>text=Érico</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T12:47:13.711567" elapsed="0.104210"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T12:47:13.816063" level="INFO">Typing text 'QA' into text field 'id:form-cargo'.</msg>
+<arg>locator=id:form-cargo</arg>
+<arg>text=QA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T12:47:13.815925" elapsed="0.053029"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T12:47:13.869341" level="INFO">Typing text 'https://github.com/egmarshall.png' into text field 'id:form-imagem'.</msg>
+<arg>locator=id:form-imagem</arg>
+<arg>text=https://github.com/egmarshall.png</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T12:47:13.869194" elapsed="0.067371"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-21T12:47:13.936842" level="INFO">Clicking element 'class:lista-suspensa'.</msg>
+<arg>locator=class:lista-suspensa</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T12:47:13.936730" elapsed="0.059650"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-21T12:47:13.996745" level="INFO">Clicking element '//option[contains(.,'Programação')]'.</msg>
+<arg>//option[contains(.,'Programação')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T12:47:13.996607" elapsed="0.020982"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-21T12:47:17.018390" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-21T12:47:14.017749" elapsed="3.000705"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-21T12:47:17.018713" level="INFO">Clicking button 'form-botao'.</msg>
+<arg>locator=form-botao</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T12:47:17.018597" elapsed="0.038075"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-21T12:47:17.074183" level="INFO">Element 'class:colaborador' is displayed.</msg>
+<arg>locator=class:colaborador</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-21T12:47:17.056860" elapsed="0.017378"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-21T12:47:27.074767" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-21T12:47:17.074402" elapsed="10.000471"/>
+</kw>
+<status status="PASS" start="2024-05-21T12:47:13.711191" elapsed="13.363824"/>
+</test>
+<status status="PASS" start="2024-05-21T12:47:12.531944" elapsed="14.543282"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Primeiro Teste">Primeiro Teste</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Primeiro Teste">Primeiro Teste</stat>
 </suite>
 </statistics>
 <errors>
